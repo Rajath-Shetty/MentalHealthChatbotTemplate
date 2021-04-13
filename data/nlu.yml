@@ -39,6 +39,14 @@ nlu:
     - of course
     - that sounds good
     - correct
+    - super
+    - sure
+    - okay
+    - yep
+    - ok
+    - fine
+    - why not
+
 
 - intent: deny
   examples: |
@@ -49,6 +57,12 @@ nlu:
     - don't like that
     - no way
     - not really
+    - nope
+    - absolutely not
+    - no thanks
+    - very unlikely
+    - didn't do any
+    - not great
 
 - intent: mood_great
   examples: |
@@ -66,6 +80,20 @@ nlu:
     - so so perfect
     - so good
     - so perfect
+
+- intent: out_of_scope
+  examples: |
+    - that's not what I want to do
+    - wait stop
+    - you are no help at all
+    - how old are you?
+    - I want a pizza
+    - are you stupid?
+    - tell me the weather
+    - switch off the lights
+    - I dont like this
+    - I don't want to tell you this
+    - I changed my mind
 
 - intent: mood_unhappy
   examples: |
@@ -90,3 +118,63 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+
+#--------------------------------------------
+
+
+- intent: ask_lower_stress
+  examples: |
+    - What do I do if I am too stressed?
+    - How can I lower my stress levels?
+    - What are good stress busters?
+    - What are some good ways to lower stress?
+    - What are good ways to relax?
+    - What are some things I can do to lower my stress?
+    - im stressed...
+
+- intent: inform_exercise
+  examples: |
+    - I did some walking
+    - I went for a run
+    - I went jogging
+    - played football
+    - played basketball
+    - played a game of tennis
+    
+- intent: inform_sleep
+  examples: |
+    - a full 8 hours
+    - 4 hours
+    - about 6 hours
+    - Only 3 hours
+
+- intent: inform_stress
+  examples: |
+    - low
+    - medium
+    - high
+
+- intent: inform_diet
+  examples: |
+    - eat less junk food
+    - I ate a salad
+    - too many snacks
+    - I followed my diet
+
+
+- intent: ask_eat_healthy
+  examples: |
+    - What is considered a healthy diet?
+    - What is considered a good diet?
+    - How do I follow a healthy diet?
+    - How do I eat healthy?
+    - What is an example of a healthy diet?
+
+- intent: ask_exercise
+  examples: |
+    - What is considered a good amount of exercise?
+    - How much exercise should I be doing?
+    - How much exercise do you recommend
+    - How much exercise should I do everyday?
+    - How many times should I go to the gym every week?
+    - How much exercise is good for me?
