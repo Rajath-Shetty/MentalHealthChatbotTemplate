@@ -1,0 +1,23 @@
+[
+  {
+    "text": "I ate healthy food",
+    "entities": [
+      {
+        "start": 6,
+        "end": 18,
+        "value": "healthy food",
+        "entity": "food_choice"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "food_choice",
+        "start": 14,
+        "end": 18,
+        "confidence_entity": 0.9962356686592102,
+        "value": "food",
+        "extractor": "DIETClassifier"
+      }
+    ]
+  }
+]

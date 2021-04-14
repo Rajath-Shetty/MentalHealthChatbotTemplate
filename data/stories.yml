@@ -2,29 +2,120 @@ version: "2.0"
 
 stories:
 
+
+- story: survey path
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_ask_exercise
+  - intent: inform_exercise
+  - action: utter_ask_sleep
+  - intent: inform_sleep
+  - action: utter_ask_stress
+  - intent: inform_stress
+  - action: utter_ask_diet
+  - intent: inform_diet
+  - action: utter_goodbye
+
+
 - story: happy path
   steps:
   - intent: greet
   - action: utter_greet
+  - intent: deny
+  - action: utter_itsok
   - intent: mood_great
   - action: utter_happy
 
-- story: sad path 1
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
-  - intent: affirm
-  - action: utter_happy
 
-- story: sad path 2
+- story: no survey and no help
   steps:
   - intent: greet
   - action: utter_greet
-  - intent: mood_unhappy
-  - action: utter_cheer_up
-  - action: utter_did_that_help
   - intent: deny
+  - action: utter_itsok
+  - intent: deny
+  - action: utter_goodbye
+
+- story: ask diet questions
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: deny
+  - action: utter_itsok
+  - intent: ask_eat_healthy
+  - action: utter_diet_info
+
+- story: ask stress questions
+  steps:
+  # - intent: greet
+  # - action: utter_greet
+  # - intent: deny
+  # - action: utter_itsok
+  - intent: ask_lower_stress
+  - action: utter_stress_info
+
+- story: ask exercise questions
+  steps:
+  # - intent: greet
+  # - action: utter_greet
+  # - intent: deny
+  # - action: utter_itsok
+  - intent: ask_exercise
+  - action: utter_exercise_info
+
+
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_ask_exercise
+  - intent: inform_exercise
+  - action: utter_ask_sleep
+  - intent: inform_sleep
+  - action: utter_ask_diet
+  - intent: inform_diet
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_goodbye
+
+- story: interactive_story_2
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_ask_diet
+  - intent: inform_diet
+  - action: utter_ask_exercise
+  - intent: inform_exercise
+  - action: utter_ask_sleep
+  - intent: inform_sleep
+  - action: utter_goodbye
+  - intent: goodbye
+  - action: utter_goodbye
+- story: interactive_story_1
+  steps:
+  - intent: greet
+  - action: utter_greet
+  - intent: affirm
+  - action: utter_ask_diet
+  - intent: inform_diet
+    entities:
+    - food_choice: salad
+  - slot_was_set:
+    - food_choice: salad
+  - action: utter_ask_exercise
+  - intent: inform_exercise
+    entities:
+    - exercise_type: walking
+  - slot_was_set:
+    - exercise_type: walking
+  - action: utter_ask_sleep
+  - intent: inform_sleep
+    entities:
+    - sleep_hr: '2'
+  - slot_was_set:
+    - sleep_hr: '2'
   - action: utter_goodbye

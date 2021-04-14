@@ -1,0 +1,48 @@
+{
+  "food_choice": {
+    "precision": 1.0,
+    "recall": 0.8333333333333334,
+    "f1-score": 0.9090909090909091,
+    "support": 6,
+    "confused_with": {}
+  },
+  "stress_lvl": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 3,
+    "confused_with": {}
+  },
+  "sleep_hr": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "exercise_type": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1-score": 1.0,
+    "support": 9,
+    "confused_with": {}
+  },
+  "micro avg": {
+    "precision": 1.0,
+    "recall": 0.9629629629629629,
+    "f1-score": 0.9811320754716981,
+    "support": 27
+  },
+  "macro avg": {
+    "precision": 1.0,
+    "recall": 0.9583333333333334,
+    "f1-score": 0.9772727272727273,
+    "support": 27
+  },
+  "weighted avg": {
+    "precision": 1.0,
+    "recall": 0.9629629629629629,
+    "f1-score": 0.9797979797979798,
+    "support": 27
+  }
+}

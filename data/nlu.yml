@@ -1,5 +1,4 @@
 version: "2.0"
-
 nlu:
 - intent: greet
   examples: |
@@ -16,7 +15,6 @@ nlu:
     - goodmorning
     - goodevening
     - good afternoon
-
 - intent: goodbye
   examples: |
     - good afternoon
@@ -30,7 +28,6 @@ nlu:
     - see you around
     - bye bye
     - see you later
-
 - intent: affirm
   examples: |
     - yes
@@ -39,7 +36,13 @@ nlu:
     - of course
     - that sounds good
     - correct
-
+    - super
+    - sure
+    - okay
+    - yep
+    - ok
+    - fine
+    - why not
 - intent: deny
   examples: |
     - no
@@ -49,7 +52,12 @@ nlu:
     - don't like that
     - no way
     - not really
-
+    - nope
+    - absolutely not
+    - no thanks
+    - very unlikely
+    - didn't do any
+    - not great
 - intent: mood_great
   examples: |
     - perfect
@@ -66,7 +74,6 @@ nlu:
     - so so perfect
     - so good
     - so perfect
-
 - intent: mood_unhappy
   examples: |
     - my day was horrible
@@ -83,7 +90,62 @@ nlu:
     - extremly sad
     - so saad
     - so sad
-
+- intent: ask_lower_stress
+  examples: |
+    - What do I do if I am too stressed?
+    - How can I lower my stress levels?
+    - What are good stress busters?
+    - What are some good ways to lower stress?
+    - What are good ways to relax?
+    - What are some things I can do to lower my stress?
+    - im so stressed...
+    - im so stressed
+- intent: inform_exercise
+  examples: |
+    - I did some [walking](exercise_type)
+    - I went for a [run](exercise_type)
+    - I went [jogging](exercise_type)
+    - played [football](exercise_type)
+    - played [basketball](exercise_type)
+    - played a [game of tennis](exercise_type)
+    - I went for a [runn](exercise_type)
+    - I did some [walking](exercise_type)
+- intent: inform_sleep
+  examples: |
+    - a full [8 hours](sleep_hr)
+    - [4 hours](sleep_hr)
+    - about [6 hours](sleep_hr)
+    - Only [3 hours](sleep_hr)
+    - [2](sleep_hr) hr
+    - [2](sleep_hr) hr
+- intent: inform_stress
+  examples: |
+    - [low](stress_lvl)
+    - [medium](stress_lvl)
+    - [high](stress_lvl)
+- intent: inform_diet
+  examples: |
+    - eat less [junk food](food_choice)
+    - I ate a [salad](food_choice)
+    - too many [snacks](food_choice)
+    - I ate [healthy food](food_choice)
+    - I ate [chocolate](food_choice)
+    - I ate a [salad](food_choice)
+- intent: ask_eat_healthy
+  examples: |
+    - What is considered a healthy diet?
+    - What is considered a good diet?
+    - How do I follow a healthy diet?
+    - How do I eat healthy?
+    - What is an example of a healthy diet?
+- intent: ask_exercise
+  examples: |
+    - What is considered a good amount of exercise?
+    - How much exercise should I be doing?
+    - How much exercise do you recommend
+    - How much exercise should I do everyday?
+    - How many times should I go to the gym every week?
+    - How much exercise is good for me?
 - intent: bot_challenge
   examples: |
     - are you a bot?
